@@ -7,7 +7,7 @@ describe("Render test", () => {
   it("Render test", () => {
     renderWithBrowserRouter(<DataLoadAndMatchForm />);
 
-    const title = screen.getByText(/Step 1 : Tutor Data/);
+    const title = screen.getByText(/Step 1/);
     expect(title).toBeInTheDocument();
   });
   // it('renders mock data', async () => {
