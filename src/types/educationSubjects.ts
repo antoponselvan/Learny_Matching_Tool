@@ -8,7 +8,7 @@ export enum EducationLevel {
   }
   
   /**
-   * Represents the stream for a secondary school level.
+   * Represents the stream for a secondary school level..
    */
   export enum SecondaryStream {
     InternationalBaccalaureate = "ib",
