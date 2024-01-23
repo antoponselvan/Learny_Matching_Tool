@@ -484,7 +484,7 @@ const DataLoadAndMatchForm = () => {
                   }
                   id="tutor-file"
                   accept=".csv"
-                  helperText="Tutor Format: KS Tutor (.CSV)"
+                  helperText="Tutor Format: KS Tutor or EH Tutor (.CSV)"
                 />
               </div>
             )}
