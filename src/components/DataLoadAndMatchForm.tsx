@@ -356,6 +356,15 @@ const DataLoadAndMatchForm = () => {
             data must be in a sheet named 'Tutor' exactly. Spreadsheets titled
             as 'TutorDB' will be automatically selected.
           </p>
+          <div className="mt-[-0.5rem]">
+            <div className="mb-2 block">
+              <Label htmlFor="format-type" value="Select tutor data format" />
+            </div>
+            <Select id="format-type" color="primary">
+              <option value={TuteeDataFormat.KSSSO}>KS Tutor</option>
+              <option value={TuteeDataFormat.KSGeneral}>EH Tutor</option>
+            </Select>
+          </div>
 
           {/* <div className="flex items-center gap-2">
             <Checkbox
@@ -503,6 +512,7 @@ const DataLoadAndMatchForm = () => {
             >
               <option value={TuteeDataFormat.KSSSO}>KS SSO</option>
               <option value={TuteeDataFormat.KSGeneral}>KS General</option>
+              <option value={TuteeDataFormat.KSGeneral}>EH Tutee</option>
             </Select>
           </div>
 
@@ -625,7 +635,7 @@ const DataLoadAndMatchForm = () => {
                   }
                   id="tutee-file"
                   accept=".csv"
-                  helperText="Tutee Format: KS SSO or KS General (.CSV)"
+                  helperText="Tutee Format: KS SSO, KS General, or EH Tutee (.CSV)"
                 />
               </div>
             )}
